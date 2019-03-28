@@ -34,14 +34,30 @@ console.log('-----------');
 
 let X = 20;
 let Y = 10;
+let A;
+
+
 console.log("Значение X:", X);
 console.log("Значение Y:", Y);
 if (X>=Y) {
-	console.log("Новое значение X:", Y);
-	console.log("Новое значение Y:", X);
+	A = X;//20
+	X = Y;//10
+	Y = A;//20
+	console.log("Новое значение X:", X);
+	console.log("Новое значение Y:", Y);
 } else {
 	console.log("Значения X и Y не изменились");
 }
+
+
+// console.log("Значение X:", X);
+// console.log("Значение Y:", Y);
+// if (X>=Y) {
+// 	console.log("Новое значение X:", Y);
+// 	console.log("Новое значение Y:", X);
+// } else {
+// 	console.log("Значения X и Y не изменились");
+// }
 console.log('-----------');
 
 let m = 8.5;
