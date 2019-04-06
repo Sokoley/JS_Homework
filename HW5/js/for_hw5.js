@@ -31,11 +31,9 @@ console.log("----------Задание 1---------");
 
     function getGoods(object, from, to) {
         for (let propName in object) {
-            for (let propName1 in object[propName]) {
-                if (object[propName][propName1] >= from && object[propName][propName1] <= to) {
+                if (object[propName]['price'] >= from && object[propName]['price'] <= to) {
                     console.log(propName, ":", object[propName]);
                 }
-            }
         }
     }
     getGoods(goods, 2000, 3000);
